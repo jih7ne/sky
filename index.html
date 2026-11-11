@@ -120,16 +120,16 @@ footer b{color:var(--cyan)}
     <div class="step" data-step="intro">
       <div class="label">OPEN CALL // GAME OF ROBOTS</div>
       <h1>Skyrakis is <span class="hl">recruiting</span></h1>
-      <p class="sub">Five seats. One desert. Pass the trial and you might rise from the sand with us. <strong>Answer honestly. The dunes can tell.</strong></p>
-      <button class="btn" data-next>Begin the trial &rarr;</button>
+      <p class="sub">We need 5 fighters. Answer 6 easy questions. <strong>Be honest. The desert is watching.</strong></p>
+      <button class="btn" data-next>Start the test &rarr;</button>
     </div>
 
-    <!-- 1 callsign -->
+    <!-- 1 name -->
     <div class="step" data-step="name">
-      <div class="label">TEST 01 // IDENTIFY</div>
-      <h2>What is your <span class="hl">callsign?</span></h2>
+      <div class="label">TEST 01 // NAME</div>
+      <h2>What is your <span class="hl">name?</span></h2>
       <form class="field" id="nameForm" autocomplete="off">
-        <input id="callsign" maxlength="18" placeholder="ENTER NAME" aria-label="Callsign">
+        <input id="callsign" maxlength="18" placeholder="YOUR NAME" aria-label="Your name">
         <button class="btn small" type="submit">&rarr;</button>
       </form>
       <div class="err" id="nameErr"></div>
@@ -137,57 +137,57 @@ footer b{color:var(--cyan)}
 
     <!-- 2 AI -->
     <div class="step" data-step="q" data-q="ai">
-      <div class="label">TEST 02 // DEPENDENCY CHECK</div>
-      <h2>Can you survive <span class="hl">without AI?</span></h2>
+      <div class="label">TEST 02 // AI</div>
+      <h2>Can you live <span class="hl">without ChatGPT?</span></h2>
       <div class="opts">
-        <button class="opt"><kbd>A</kbd>Yes. I debug by candlelight.</button>
-        <button class="opt"><kbd>B</kbd>For an hour. Maybe two.</button>
-        <button class="opt"><kbd>C</kbd>What is life without autocomplete?</button>
-        <button class="opt"><kbd>D</kbd>I am the AI.</button>
+        <button class="opt"><kbd>A</kbd>Yes, easy.</button>
+        <button class="opt"><kbd>B</kbd>One day. Maybe.</button>
+        <button class="opt"><kbd>C</kbd>No. Please don't take it.</button>
+        <button class="opt"><kbd>D</kbd>What is ChatGPT?</button>
       </div>
     </div>
 
     <!-- 3 desert -->
     <div class="step" data-step="q" data-q="desert">
-      <div class="label">TEST 03 // ENVIRONMENT</div>
-      <h2>Can you survive <span class="hl">the desert?</span></h2>
+      <div class="label">TEST 03 // DESERT</div>
+      <h2>Can you live <span class="hl">in the desert?</span></h2>
       <div class="opts">
-        <button class="opt"><kbd>A</kbd>The desert fears me.</button>
-        <button class="opt"><kbd>B</kbd>With enough water and a charger.</button>
-        <button class="opt"><kbd>C</kbd>I get sunburnt indoors.</button>
-        <button class="opt"><kbd>D</kbd>I walk without rhythm. Always.</button>
+        <button class="opt"><kbd>A</kbd>Yes. I love the sun.</button>
+        <button class="opt"><kbd>B</kbd>Only with ice cream.</button>
+        <button class="opt"><kbd>C</kbd>No. I need my bed and Wi-Fi.</button>
+        <button class="opt"><kbd>D</kbd>I am the desert.</button>
       </div>
     </div>
 
     <!-- 4 weapon -->
     <div class="step" data-step="q" data-q="tool">
-      <div class="label">TEST 04 // ARSENAL</div>
-      <h2>Choose your <span class="hl">weapon</span></h2>
+      <div class="label">TEST 04 // WEAPON</div>
+      <h2>Pick your <span class="hl">weapon</span></h2>
       <div class="opts">
-        <button class="opt"><kbd>A</kbd>Soldering iron</button>
-        <button class="opt"><kbd>B</kbd>Arduino and a prayer</button>
-        <button class="opt"><kbd>C</kbd>Duct tape. Lots of it.</button>
-        <button class="opt"><kbd>D</kbd>Pure willpower</button>
+        <button class="opt"><kbd>A</kbd>A hammer</button>
+        <button class="opt"><kbd>B</kbd>Tape. A lot of tape.</button>
+        <button class="opt"><kbd>C</kbd>My laptop</button>
+        <button class="opt"><kbd>D</kbd>My mom's slipper</button>
       </div>
     </div>
 
     <!-- 5 scenario -->
     <div class="step" data-step="q" data-q="crisis">
-      <div class="label">TEST 05 // UNDER PRESSURE</div>
-      <h2>Robot down. One ration left. <span class="hl">You…</span></h2>
+      <div class="label">TEST 05 // PROBLEM</div>
+      <h2>The robot is broken. <span class="hl">You…</span></h2>
       <div class="opts">
-        <button class="opt"><kbd>A</kbd>Fix the robot. Drink later.</button>
-        <button class="opt"><kbd>B</kbd>Share the ration with the team.</button>
-        <button class="opt"><kbd>C</kbd>Blame the sand.</button>
-        <button class="opt"><kbd>D</kbd>Write a 40-page incident report.</button>
+        <button class="opt"><kbd>A</kbd>Fix it.</button>
+        <button class="opt"><kbd>B</kbd>Kick it.</button>
+        <button class="opt"><kbd>C</kbd>Cry a little.</button>
+        <button class="opt"><kbd>D</kbd>Say it was not me.</button>
       </div>
     </div>
 
     <!-- 6 hold -->
     <div class="step center" data-step="hold">
-      <div class="label">TEST 06 // TRANSMIT</div>
-      <h2>Can you hear <span class="hl">the signal?</span></h2>
-      <p class="sub">Press and hold to send your application into the dunes.</p>
+      <div class="label">TEST 06 // SEND</div>
+      <h2>Last step. <span class="hl">Send it!</span></h2>
+      <p class="sub">Press and hold the button.</p>
       <div class="hold" id="hold" role="button" tabindex="0" aria-label="Hold to transmit">
         <svg viewBox="0 0 190 190"><circle class="track" cx="95" cy="95" r="92"/><circle class="bar" id="holdBar" cx="95" cy="95" r="92"/></svg>
         <div class="core" id="holdTxt">HOLD<br>TO SEND</div>
@@ -196,19 +196,19 @@ footer b{color:var(--cyan)}
 
     <!-- 7 transmitting -->
     <div class="step" data-step="log">
-      <div class="label">UPLINK // IN PROGRESS</div>
-      <h2>Transmitting<span class="hl" style="display:inline">…</span></h2>
+      <div class="label">PLEASE WAIT</div>
+      <h2>Sending<span class="hl" style="display:inline">…</span></h2>
       <div class="log" id="log"></div>
     </div>
 
     <!-- 8 too late -->
     <div class="step center" data-step="end">
-      <div class="label" id="endLabel">SIGNAL RECEIVED // 0.3 S LATE</div>
-      <h1><span class="glitch on" data-t="Too late.">Too late.</span><span class="hl">The five are chosen.</span></h1>
+      <div class="label" id="endLabel">YOUR ANSWERS ARRIVED… A LITTLE LATE</div>
+      <h1><span class="glitch on" data-t="Too late!">Too late!</span><span class="hl">We have our 5 fighters.</span></h1>
       <div class="slots" id="slots"></div>
       <p class="sub" id="endMsg"></p>
       <div class="stamp">STAY TUNED FOR THE REVEAL</div><br>
-      <button class="ghost" id="again">&#8635; Try the trial again</button>
+      <button class="ghost" id="again">&#8635; Try again</button>
     </div>
   </section>
 
@@ -280,7 +280,7 @@ document.querySelectorAll('[data-next]').forEach(b=>b.onclick=()=>{beep();show(c
 document.getElementById('nameForm').onsubmit=e=>{
   e.preventDefault();
   const v=document.getElementById('callsign').value.trim();
-  if(!v){document.getElementById('nameErr').textContent='NO SIGNAL. ENTER A CALLSIGN.';beep(220,.15,'sawtooth',.05);return}
+  if(!v){document.getElementById('nameErr').textContent='PLEASE WRITE YOUR NAME.';beep(220,.15,'sawtooth',.05);return}
   callsign=v.toUpperCase(); document.getElementById('nameErr').textContent=''; confirmBeep(); show(cur+1);
 };
 
@@ -316,12 +316,12 @@ hold.addEventListener('keydown',e=>{if((e.key===' '||e.key==='Enter')&&!e.repeat
 function runLog(){
   const log=document.getElementById('log'); log.innerHTML='';
   const lines=[
-    ['> callsign: '+callsign,''],
-    ['> encrypting answers.........','ok','DONE'],
-    ['> routing through the dunes..','ok','DONE'],
-    ['> sandstorm interference.....','bad','DETECTED'],
-    ['> rerouting via moon relay...','ok','DONE'],
-    ['> checking available seats...','',''],
+    ['> name: '+callsign,''],
+    ['> sending answers............','ok','OK'],
+    ['> crossing the desert........','ok','OK'],
+    ['> sandstorm!.................','bad','DANGER'],
+    ['> trying again...............','ok','OK'],
+    ['> looking for free places....','',''],
   ];
   lines.forEach((l,i)=>setTimeout(()=>{
     const d=document.createElement('div'); d.textContent=l[0]+(l[2]?' ':'');
@@ -334,7 +334,7 @@ function runEnd(){
   boom();
   const sl=document.getElementById('slots'); sl.innerHTML='';
   for(let i=0;i<5;i++){const s=document.createElement('span');s.style.animationDelay=(.25+i*.18)+'s';sl.appendChild(s);setTimeout(()=>beep(700+i*90,.07,'sine',.06),250+i*180)}
-  document.getElementById('endMsg').innerHTML=`Your signal reached us, <strong>${callsign.replace(/[<>&]/g,'')}</strong>, but the dunes had already closed. All five seats are filled.<br><br>Our fighters will be revealed soon. Stay tuned.`;
+  document.getElementById('endMsg').innerHTML=`Sorry <strong>${callsign.replace(/[<>&]/g,'')}</strong>, all 5 places are taken.<br><br>We will show our fighters very soon. Stay tuned!`;
   const g=document.querySelector('.glitch'); g.classList.add('on'); setTimeout(()=>g.classList.remove('on'),1600);
 }
 document.getElementById('again').onclick=()=>{answers={};done=false;hv=0;bar.style.strokeDashoffset=C;holdTxt.innerHTML='HOLD<br>TO SEND';document.getElementById('callsign').value='';document.querySelectorAll('.opt').forEach(x=>x.classList.remove('picked'));beep();show(0)};
